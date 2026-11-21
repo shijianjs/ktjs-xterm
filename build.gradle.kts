@@ -27,7 +27,7 @@ extra["versionSuffix"] = versionSuffix
 
 // Every publishable module shares the prefix, which is also how publishing, Dokka and the version
 // report find them. Keep it in sync with the module directories and settings.gradle.kts.
-val publishedPrefix = "ktjs-xterm-"
+val publishedPrefix = "ktjs-xterm"
 
 // Dokka aggregates every published module into one API reference. `demo` is not part of the
 // published API surface, so it is excluded by the prefix filter.
