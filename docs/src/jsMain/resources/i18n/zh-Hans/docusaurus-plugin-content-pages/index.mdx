@@ -1,0 +1,54 @@
+---
+title: ktjs-xterm
+description: "@xterm/xterm 的 Kotlin/JS 封装"
+hide_table_of_contents: true
+---
+
+import logo from '@site/static/img/ktjs-xterm-logo.png';
+
+{/* `<ktjs-…>` 分区来自 ktjs-docusaurus 的工具箱：Gradle 插件把它的 bundle 放到 `static/ktjs-client/`，
+    `ClientModule.kt` 在页面 hydrate 之后加载它。`href` 写成相对路径，两种 locale 前缀下都能用；
+    `logo` 用 import 取，这样 URL 会带上本站实际的 `baseUrl`。 */}
+
+<ktjs-hero logo-src={logo} title="ktjs-xterm" tagline="@xterm/xterm 的 Kotlin/JS 绑定">
+
+<ktjs-action kind="primary" href="intro">开始阅读</ktjs-action>
+
+<ktjs-action kind="secondary" href="https://shijianjs.github.io/ktjs-xterm/demo/" icon="lucide:terminal">在线 demo</ktjs-action>
+
+<ktjs-action kind="secondary" href="https://github.com/shijianjs/ktjs-xterm" icon="simple-icons:github">GitHub</ktjs-action>
+
+<ktjs-badge href="https://github.com/shijianjs/ktjs-xterm/blob/master/LICENSE" src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></ktjs-badge>
+
+<ktjs-badge href="https://github.com/shijianjs/ktjs-xterm" src="https://img.shields.io/badge/@xterm%2Fxterm-6.0.0-5C2D91" alt="上游：@xterm/xterm 6.0.0"></ktjs-badge>
+
+<ktjs-badge href="https://github.com/shijianjs/ktjs-xterm" src="https://img.shields.io/badge/Kotlin%2FJS-2.4.21-7F52FF?logo=kotlin&logoColor=white" alt="Kotlin/JS"></ktjs-badge>
+</ktjs-hero>
+
+<ktjs-features section-title="封装了什么" tinted>
+
+<ktjs-feature icon="lucide:terminal" title="终端本体">`Terminal`、缓冲区、解析器钩子，以及全部十三个 `on*` 事件——按上游 `xterm.d.ts` 声明，没有 dynamic 调用。</ktjs-feature>
+
+<ktjs-feature icon="lucide:maximize" title="五个 addon">`fit`、`search`、`serialize`、`unicode11`、`web-links`，各自来自独立 npm 包，通过 `loadAddon` 装载。</ktjs-feature>
+
+<ktjs-feature icon="lucide:radio" title="事件即函数">上游 `IEvent<T>` 是可调用对象，这里是函数类型加 `listen` 扩展：订阅一行写完，返回自己的 disposer。</ktjs-feature>
+
+<ktjs-feature icon="lucide:table" title="缓冲区有类型">`IBuffer` → `IBufferLine` → `IBufferCell` 无需强转就能走通，包括 `translateToString` 与逐格属性读取。</ktjs-feature>
+
+<ktjs-feature icon="lucide:flask-conical" title="对真实库测试">模块测试跑在 Chromium 里、直连打包进来的 `@xterm/xterm`；demo 另有 Playwright 套件，会往真实终端里敲字。</ktjs-feature>
+
+<ktjs-feature icon="lucide:book-open" title="双语文档">本站由 ktjs-docusaurus 构建：类型化配置、Markdown 页面、中英两版。</ktjs-feature>
+
+</ktjs-features>
+
+<ktjs-next-steps section-title="接下来">
+
+<ktjs-step href="intro" title="简介">模块里有什么，一个终端怎么拼起来。</ktjs-step>
+
+<ktjs-step href="guide/getting-started" title="快速开始">依赖坐标，以及页面上的第一个终端。</ktjs-step>
+
+<ktjs-step href="guide/usage" title="用法">选项、事件、缓冲区、addon，以及封装层刻意不碰的部分。</ktjs-step>
+
+<ktjs-step href="https://shijianjs.github.io/ktjs-xterm/api/" title="API 文档">发布模块的 Dokka 产物。</ktjs-step>
+
+</ktjs-next-steps>

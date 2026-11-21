@@ -1,0 +1,55 @@
+---
+title: ktjs-xterm
+description: Kotlin/JS wrapper for @xterm/xterm
+hide_table_of_contents: true
+---
+
+import logo from '@site/static/img/ktjs-xterm-logo.png';
+
+{/* The `<ktjs-…>` sections come from the ktjs-docusaurus kit: the Gradle plugin publishes its bundle
+    under `static/ktjs-client/`, and `ClientModule.kt` loads it once the page is hydrated. `href`s stay
+    relative so the same page works under both locale prefixes; `logo` is imported so the URL carries
+    whatever `baseUrl` this site is deployed under. */}
+
+<ktjs-hero logo-src={logo} title="ktjs-xterm" tagline="Kotlin/JS bindings for @xterm/xterm">
+
+<ktjs-action kind="primary" href="intro">Get started</ktjs-action>
+
+<ktjs-action kind="secondary" href="https://shijianjs.github.io/ktjs-xterm/demo/" icon="lucide:terminal">Live demo</ktjs-action>
+
+<ktjs-action kind="secondary" href="https://github.com/shijianjs/ktjs-xterm" icon="simple-icons:github">GitHub</ktjs-action>
+
+<ktjs-badge href="https://github.com/shijianjs/ktjs-xterm/blob/master/LICENSE" src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></ktjs-badge>
+
+<ktjs-badge href="https://github.com/shijianjs/ktjs-xterm" src="https://img.shields.io/badge/@xterm%2Fxterm-6.0.0-5C2D91" alt="Upstream: @xterm/xterm 6.0.0"></ktjs-badge>
+
+<ktjs-badge href="https://github.com/shijianjs/ktjs-xterm" src="https://img.shields.io/badge/Kotlin%2FJS-2.4.21-7F52FF?logo=kotlin&logoColor=white" alt="Kotlin/JS"></ktjs-badge>
+</ktjs-hero>
+
+<ktjs-features section-title="What it wraps" tinted>
+
+<ktjs-feature icon="lucide:terminal" title="The terminal itself">`Terminal`, its buffers, the parser hooks and all thirteen `on*` events — declared from the upstream `xterm.d.ts`, no dynamic calls.</ktjs-feature>
+
+<ktjs-feature icon="lucide:maximize" title="Five addons">`fit`, `search`, `serialize`, `unicode11` and `web-links`, each from its own npm package and loaded through `loadAddon`.</ktjs-feature>
+
+<ktjs-feature icon="lucide:radio" title="Events as functions">Upstream `IEvent<T>` is a callable object; here it is a function type with a `listen` extension, so a subscription is one line and returns its disposer.</ktjs-feature>
+
+<ktjs-feature icon="lucide:table" title="Buffers are typed">`IBuffer` → `IBufferLine` → `IBufferCell` is navigable without casts, including `translateToString` and the per-cell attribute readers.</ktjs-feature>
+
+<ktjs-feature icon="lucide:flask-conical" title="Tested against the real library">The module's tests run in Chromium against the bundled `@xterm/xterm`; the demo has its own Playwright suite that types into a live terminal.</ktjs-feature>
+
+<ktjs-feature icon="lucide:book-open" title="Docs in two languages">This site is a Kotlin/JS module built by ktjs-docusaurus: typed configuration, Markdown pages, English and Chinese.</ktjs-feature>
+
+</ktjs-features>
+
+<ktjs-next-steps section-title="Where to go next">
+
+<ktjs-step href="intro" title="Introduction">What the module contains and how a terminal fits together.</ktjs-step>
+
+<ktjs-step href="guide/getting-started" title="Getting started">The dependency, and the first terminal on a page.</ktjs-step>
+
+<ktjs-step href="guide/usage" title="Usage">Options, events, buffers, addons and what the wrapper deliberately leaves alone.</ktjs-step>
+
+<ktjs-step href="https://shijianjs.github.io/ktjs-xterm/api/" title="API reference">Dokka output for the published module.</ktjs-step>
+
+</ktjs-next-steps>

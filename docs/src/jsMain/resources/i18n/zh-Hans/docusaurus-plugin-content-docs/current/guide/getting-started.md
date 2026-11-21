@@ -1,0 +1,126 @@
+---
+sidebar_position: 1
+---
+
+# 快速开始
+
+## 环境要求
+
+- JDK 21 或更高；Gradle wrapper 已入库（9.4.1）。
+- Node 与 npm 由 Kotlin Gradle 插件下载并驱动——没有需要手动执行的 `npm install`，`kotlin.js.yarn=false`
+  保证包管理器是 npm。
+- 第一次跑浏览器测试时会下载 Chromium（Playwright）。
+
+## 构建、测试、发布
+
+```bash
+./gradlew build                    # 编译、Detekt、浏览器测试
+./gradlew :ktjs-xterm:jsBrowserTest
+./gradlew :demo:e2eTest            # 用 Playwright 打打包后的 demo 页面
+./gradlew :docs:docusaurusBuild    # 文档站
+./gradlew pagesSite                # 根目录是文档，demo 在 /demo/，Dokka 在 /api/
+```
+
+`build` 不含 demo 的端到端套件，也不组装 Pages 站点：两者都要浏览器，在 CI 里是单独的步骤。
+```mermaid
+flowchart LR
+  CORE["wrapper 模块<br/>JS 胶水 + 浏览器测试"] --> SITE["pagesSite"]
+  DEMO["demo 模块<br/>工具箱外壳 + 页面"] -->|"落在 /demo/"| SITE
+  DOCS["docs 模块<br/>Docusaurus 内容"] -->|"落在 /"| SITE
+  DOKKA["Dokka"] -->|"落在 /api/"| SITE
+```
+
+`pagesSite` 是唯一把三件产物摆到一起的任务；`build` 只到编译、测试和 wrapper 自己的浏览器套件为止。
+
+## 开发
+
+```bash
+./gradlew :docs:docusaurusStart              # 文档站的开发服务器
+./gradlew :demo:jsBrowserDevelopmentRun      # demo 页面的开发服务器
+```
+
+Docusaurus 监听站点目录，改 Markdown 即时刷新；改 Kotlin 要先 `./gradlew :docs:docusaurusSite`，因为
+站点 import 的是编译产物。
+
+### demo 开发服务器失败时
+
+`jsBrowserDevelopmentRun` 把 webpack 当外部进程跑。这个进程非 0 退出时，Kotlin Gradle 插件只能报
+`Error occurred. See log for details.`：webpack 的输出被当作 progress 行转发，而默认控制台在任务结束时
+会把进度区擦掉。换成 plain 控制台重跑才能留住它：
+
+```bash
+./gradlew :demo:jsBrowserDevelopmentRun --console=plain
+```
+
+端口被占不是这类失败的原因——开发服务器会从 8080 一路退到 8081 及以后，已经有一个在跑也不会让任务失败。
+如果 plain 控制台同样没有内容，就直接跑 Gradle 跑的那条命令、读它的 stderr（生成的包在
+`build/js/packages/<module>-demo`）：
+
+```bash
+cd build/js/packages/<module>-demo
+node ../../node_modules/webpack/bin/webpack.js serve --config webpack.config.js
+```
+
+遇到可疑的启动问题（这个任务、或浏览器测试）先换一个干净的 daemon 再谈其他：`./gradlew --stop`，然后
+重跑。长期复用的 daemon 会带着上一次构建的坏状态（自己拉起的 node 子进程句柄、仍然认为被占用的输出目录），
+这个症状就是重启电脑后自愈的。
+
+## 依赖本模块
+
+```kotlin
+kotlin {
+    js {
+        browser()
+        binaries.library()
+    }
+    sourceSets {
+        jsMain.dependencies {
+            implementation("io.github.shijianjs:ktjs-xterm:6.0.0-kt.1")
+        }
+    }
+}
+```
+
+发布版本号是 `{npm 版本}-kt.{修订号}`，所以 `6.0.0-kt.1` 就是 `@xterm/xterm` 6.0.0 加第一版封装。addon 随模块一起引入：
+它们由各自的 npm 包（`@xterm/addon-fit` 等）提供，模块已经声明好，使用方不用再加。
+
+## 第一个终端
+
+```kotlin
+val terminal = Xterm.create(
+    options {
+        cols = 80
+        rows = 24
+        convertEol = true
+    },
+)
+
+terminal.open(container)          // 容器必须已挂到文档上、且已有高度
+terminal.write("\u001b[1;32mready\u001b[0m\r\n")
+terminal.onData.listen { data -> terminal.write(data) }
+```
+
+`open` 会测量元素，所以先给容器尺寸；布局变化后再调 `FitAddon().fit()` 按当前尺寸重算。
+
+## 目录结构
+
+| 路径 | 内容 |
+| --- | --- |
+| `package.json` | npm 版本的唯一来源（Dependabot 维护） |
+| `wrapper-revisions.properties` | 每个模块的 `-kt.N` 修订号 |
+| `ktjs-xterm/src/jsMain/kotlin` | wrapper 声明 |
+| `ktjs-xterm/src/jsTest/kotlin` | 对应的浏览器测试 |
+| `demo/src/jsMain` | demo 页面与它的 Kotlin 入口 |
+| `docs/src/jsMain/kotlin` | 站点配置与侧边栏 |
+| `docs/src/jsMain/resources` | Markdown 页面、MDX 首页、样式、译文 |
+
+## 锁文件
+
+整个 workspace 的 npm 依赖只解析一次，钉在 `kotlin-js-store/package-lock.json`。新增或升级 npm 依赖、
+或者改了模块版本之后要重新生成：
+
+```bash
+./gradlew kotlinUpgradePackageLock
+```
+
+CI 会校验提交的锁文件，忘了重新生成会直接构建失败，而不是悄悄漂移。
