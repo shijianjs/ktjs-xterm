@@ -1,0 +1,831 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ITerminalConstructorOptions</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    ktjs-xterm
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector js-like" data-active="" aria-pressed="true" data-filter=":ktjs-xterm/jsMain">js</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option js-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":ktjs-xterm/jsMain" data-filter=":ktjs-xterm/jsMain">
+                                <span class="checkbox--icon"></span>
+                                js
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    ktjs-xterm
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="ktjs-xterm::io.github.shijianjs.ktjs.xterm/ITerminalConstructorOptions///PointingToDeclaration//-616499722">
+  <div class="breadcrumbs"><a href="../../index.html">ktjs-xterm</a><span class="delimiter">/</span><a href="../index.html">io.github.shijianjs.ktjs.xterm</a><span class="delimiter">/</span><span class="current">ITerminalConstructorOptions</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>ITerminal</span><wbr><span>Constructor</span><wbr><span><span>Options</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="index.html">ITerminalConstructorOptions</a> : <a href="../-i-terminal-options/index.html">ITerminalOptions</a>, <a href="../-i-terminal-init-only-options/index.html">ITerminalInitOnlyOptions</a></div><p class="paragraph">The single object the constructor takes.</p><p class="paragraph">Upstream declares the constructor parameter as <code class="lang-kotlin">ITerminalOptions &amp; ITerminalInitOnlyOptions</code> — one object carrying both sets of keys — so the wrapper declares the intersection as this interface.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-482381317%2FProperties%2F-616499722" anchor-label="allowProposedApi" id="-482381317%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/allow-proposed-api.html"><span>allow</span><wbr><span>Proposed</span><wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-482381317%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/allow-proposed-api.html">allowProposedApi</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-872984301%2FProperties%2F-616499722" anchor-label="allowTransparency" id="-872984301%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/allow-transparency.html"><span>allow</span><wbr><span><span>Transparency</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-872984301%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/allow-transparency.html">allowTransparency</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1439843909%2FProperties%2F-616499722" anchor-label="altClickMovesCursor" id="-1439843909%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/alt-click-moves-cursor.html"><span>alt</span><wbr><span>Click</span><wbr><span>Moves</span><wbr><span><span>Cursor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1439843909%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/alt-click-moves-cursor.html">altClickMovesCursor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2115694687%2FProperties%2F-616499722" anchor-label="blinkIntervalDuration" id="2115694687%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/blink-interval-duration.html"><span>blink</span><wbr><span>Interval</span><wbr><span><span>Duration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2115694687%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/blink-interval-duration.html">blinkIntervalDuration</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-606538281%2FProperties%2F-616499722" anchor-label="cols" id="-606538281%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-init-only-options/cols.html"><span><span>cols</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-606538281%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-init-only-options/cols.html">cols</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1141362505%2FProperties%2F-616499722" anchor-label="convertEol" id="-1141362505%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/convert-eol.html"><span>convert</span><wbr><span><span>Eol</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1141362505%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/convert-eol.html">convertEol</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1052478862%2FProperties%2F-616499722" anchor-label="cursorBlink" id="1052478862%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/cursor-blink.html"><span>cursor</span><wbr><span><span>Blink</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1052478862%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/cursor-blink.html">cursorBlink</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="964957988%2FProperties%2F-616499722" anchor-label="cursorInactiveStyle" id="964957988%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/cursor-inactive-style.html"><span>cursor</span><wbr><span>Inactive</span><wbr><span><span>Style</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="964957988%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/cursor-inactive-style.html">cursorInactiveStyle</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="604535001%2FProperties%2F-616499722" anchor-label="cursorStyle" id="604535001%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/cursor-style.html"><span>cursor</span><wbr><span><span>Style</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="604535001%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/cursor-style.html">cursorStyle</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1866152548%2FProperties%2F-616499722" anchor-label="cursorWidth" id="1866152548%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/cursor-width.html"><span>cursor</span><wbr><span><span>Width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1866152548%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/cursor-width.html">cursorWidth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-912012954%2FProperties%2F-616499722" anchor-label="disableStdin" id="-912012954%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/disable-stdin.html"><span>disable</span><wbr><span><span>Stdin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-912012954%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/disable-stdin.html">disableStdin</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1331705537%2FProperties%2F-616499722" anchor-label="documentOverride" id="-1331705537%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/document-override.html"><span>document</span><wbr><span><span>Override</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1331705537%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/document-override.html">documentOverride</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.js/-js-any/index.html">JsAny</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1756341599%2FProperties%2F-616499722" anchor-label="drawBoldTextInBrightColors" id="-1756341599%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/draw-bold-text-in-bright-colors.html"><span>draw</span><wbr><span>Bold</span><wbr><span>Text</span><wbr><span>In</span><wbr><span>Bright</span><wbr><span><span>Colors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1756341599%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/draw-bold-text-in-bright-colors.html">drawBoldTextInBrightColors</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1820582946%2FProperties%2F-616499722" anchor-label="fastScrollSensitivity" id="-1820582946%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/fast-scroll-sensitivity.html"><span>fast</span><wbr><span>Scroll</span><wbr><span><span>Sensitivity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1820582946%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/fast-scroll-sensitivity.html">fastScrollSensitivity</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1959140083%2FProperties%2F-616499722" anchor-label="fontFamily" id="1959140083%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/font-family.html"><span>font</span><wbr><span><span>Family</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1959140083%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/font-family.html">fontFamily</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="897109878%2FProperties%2F-616499722" anchor-label="fontSize" id="897109878%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/font-size.html"><span>font</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="897109878%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/font-size.html">fontSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1703514719%2FProperties%2F-616499722" anchor-label="fontWeight" id="1703514719%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/font-weight.html"><span>font</span><wbr><span><span>Weight</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1703514719%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/font-weight.html">fontWeight</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1075844698%2FProperties%2F-616499722" anchor-label="fontWeightBold" id="1075844698%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/font-weight-bold.html"><span>font</span><wbr><span>Weight</span><wbr><span><span>Bold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1075844698%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/font-weight-bold.html">fontWeightBold</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="486545093%2FProperties%2F-616499722" anchor-label="ignoreBracketedPasteMode" id="486545093%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/ignore-bracketed-paste-mode.html"><span>ignore</span><wbr><span>Bracketed</span><wbr><span>Paste</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="486545093%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/ignore-bracketed-paste-mode.html">ignoreBracketedPasteMode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1013779433%2FProperties%2F-616499722" anchor-label="letterSpacing" id="-1013779433%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/letter-spacing.html"><span>letter</span><wbr><span><span>Spacing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1013779433%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/letter-spacing.html">letterSpacing</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="728235595%2FProperties%2F-616499722" anchor-label="lineHeight" id="728235595%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/line-height.html"><span>line</span><wbr><span><span>Height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="728235595%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/line-height.html">lineHeight</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="729330820%2FProperties%2F-616499722" anchor-label="linkHandler" id="729330820%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/link-handler.html"><span>link</span><wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="729330820%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/link-handler.html">linkHandler</a><span class="token operator">: </span><a href="../-i-link-handler/index.html">ILinkHandler</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-412121834%2FProperties%2F-616499722" anchor-label="logger" id="-412121834%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/logger.html"><span><span>logger</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-412121834%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/logger.html">logger</a><span class="token operator">: </span><a href="../-i-logger/index.html">ILogger</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-155892794%2FProperties%2F-616499722" anchor-label="logLevel" id="-155892794%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/log-level.html"><span>log</span><wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-155892794%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/log-level.html">logLevel</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1945434900%2FProperties%2F-616499722" anchor-label="macOptionClickForcesSelection" id="1945434900%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/mac-option-click-forces-selection.html"><span>mac</span><wbr><span>Option</span><wbr><span>Click</span><wbr><span>Forces</span><wbr><span><span>Selection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1945434900%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/mac-option-click-forces-selection.html">macOptionClickForcesSelection</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-10773951%2FProperties%2F-616499722" anchor-label="macOptionIsMeta" id="-10773951%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/mac-option-is-meta.html"><span>mac</span><wbr><span>Option</span><wbr><span>Is</span><wbr><span><span>Meta</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-10773951%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/mac-option-is-meta.html">macOptionIsMeta</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1411415925%2FProperties%2F-616499722" anchor-label="minimumContrastRatio" id="-1411415925%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/minimum-contrast-ratio.html"><span>minimum</span><wbr><span>Contrast</span><wbr><span><span>Ratio</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1411415925%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/minimum-contrast-ratio.html">minimumContrastRatio</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1150874830%2FProperties%2F-616499722" anchor-label="mouseEventsRequireAlt" id="-1150874830%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/mouse-events-require-alt.html"><span>mouse</span><wbr><span>Events</span><wbr><span>Require</span><wbr><span><span>Alt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1150874830%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/mouse-events-require-alt.html">mouseEventsRequireAlt</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1499612625%2FProperties%2F-616499722" anchor-label="quirks" id="1499612625%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/quirks.html"><span><span>quirks</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1499612625%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/quirks.html">quirks</a><span class="token operator">: </span><a href="../-i-terminal-quirks/index.html">ITerminalQuirks</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1138766181%2FProperties%2F-616499722" anchor-label="reflowCursorLine" id="-1138766181%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/reflow-cursor-line.html"><span>reflow</span><wbr><span>Cursor</span><wbr><span><span>Line</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1138766181%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/reflow-cursor-line.html">reflowCursorLine</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1169184163%2FProperties%2F-616499722" anchor-label="rescaleOverlappingGlyphs" id="-1169184163%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/rescale-overlapping-glyphs.html"><span>rescale</span><wbr><span>Overlapping</span><wbr><span><span>Glyphs</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1169184163%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/rescale-overlapping-glyphs.html">rescaleOverlappingGlyphs</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-603367649%2FProperties%2F-616499722" anchor-label="rightClickSelectsWord" id="-603367649%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/right-click-selects-word.html"><span>right</span><wbr><span>Click</span><wbr><span>Selects</span><wbr><span><span>Word</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-603367649%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/right-click-selects-word.html">rightClickSelectsWord</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1107095119%2FProperties%2F-616499722" anchor-label="rows" id="-1107095119%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-init-only-options/rows.html"><span><span>rows</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1107095119%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-init-only-options/rows.html">rows</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="554270484%2FProperties%2F-616499722" anchor-label="screenReaderMode" id="554270484%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/screen-reader-mode.html"><span>screen</span><wbr><span>Reader</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="554270484%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/screen-reader-mode.html">screenReaderMode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-704757390%2FProperties%2F-616499722" anchor-label="scrollback" id="-704757390%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/scrollback.html"><span><span>scrollback</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-704757390%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/scrollback.html">scrollback</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-708334898%2FProperties%2F-616499722" anchor-label="scrollbar" id="-708334898%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/scrollbar.html"><span><span>scrollbar</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-708334898%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/scrollbar.html">scrollbar</a><span class="token operator">: </span><a href="../-i-scrollbar-options/index.html">IScrollbarOptions</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-233345149%2FProperties%2F-616499722" anchor-label="scrollOnEraseInDisplay" id="-233345149%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/scroll-on-erase-in-display.html"><span>scroll</span><wbr><span>On</span><wbr><span>Erase</span><wbr><span>In</span><wbr><span><span>Display</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-233345149%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/scroll-on-erase-in-display.html">scrollOnEraseInDisplay</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="825876481%2FProperties%2F-616499722" anchor-label="scrollOnUserInput" id="825876481%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/scroll-on-user-input.html"><span>scroll</span><wbr><span>On</span><wbr><span>User</span><wbr><span><span>Input</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="825876481%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/scroll-on-user-input.html">scrollOnUserInput</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1099935202%2FProperties%2F-616499722" anchor-label="scrollSensitivity" id="1099935202%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/scroll-sensitivity.html"><span>scroll</span><wbr><span><span>Sensitivity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1099935202%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/scroll-sensitivity.html">scrollSensitivity</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1570613819%2FProperties%2F-616499722" anchor-label="showCursorImmediately" id="-1570613819%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-init-only-options/show-cursor-immediately.html"><span>show</span><wbr><span>Cursor</span><wbr><span><span>Immediately</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1570613819%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-init-only-options/show-cursor-immediately.html">showCursorImmediately</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1543196407%2FProperties%2F-616499722" anchor-label="smoothScrollDuration" id="1543196407%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/smooth-scroll-duration.html"><span>smooth</span><wbr><span>Scroll</span><wbr><span><span>Duration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1543196407%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/smooth-scroll-duration.html">smoothScrollDuration</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="896138743%2FProperties%2F-616499722" anchor-label="tabStopWidth" id="896138743%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/tab-stop-width.html"><span>tab</span><wbr><span>Stop</span><wbr><span><span>Width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="896138743%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/tab-stop-width.html">tabStopWidth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1316609035%2FProperties%2F-616499722" anchor-label="theme" id="1316609035%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/theme.html"><span><span>theme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1316609035%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/theme.html">theme</a><span class="token operator">: </span><a href="../-i-theme/index.html">ITheme</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-653350732%2FProperties%2F-616499722" anchor-label="vtExtensions" id="-653350732%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/vt-extensions.html"><span>vt</span><wbr><span><span>Extensions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-653350732%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/vt-extensions.html">vtExtensions</a><span class="token operator">: </span><a href="../-i-vt-extensions/index.html">IVtExtensions</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1859047962%2FProperties%2F-616499722" anchor-label="windowOptions" id="-1859047962%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/window-options.html"><span>window</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1859047962%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/window-options.html">windowOptions</a><span class="token operator">: </span><a href="../-i-window-options/index.html">IWindowOptions</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-41600268%2FProperties%2F-616499722" anchor-label="windowsPty" id="-41600268%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/windows-pty.html"><span>windows</span><wbr><span><span>Pty</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-41600268%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/windows-pty.html">windowsPty</a><span class="token operator">: </span><a href="../-i-windows-pty/index.html">IWindowsPty</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1136738329%2FProperties%2F-616499722" anchor-label="wordSeparator" id="1136738329%2FProperties%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-i-terminal-options/word-separator.html"><span>word</span><wbr><span><span>Separator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1136738329%2FProperties%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">external </span><span class="token keyword">var </span><a href="../-i-terminal-options/word-separator.html">wordSeparator</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

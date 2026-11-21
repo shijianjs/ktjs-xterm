@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkktjs_docusaurus_site=globalThis.webpackChunkktjs_docusaurus_site||[]).push([[4623],{4623(s,e,u){u.d(e,{createCynefinServices:()=>a.t});var a=u(4247);u(1471)}}]);

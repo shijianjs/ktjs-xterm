@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkktjs_docusaurus_site=globalThis.webpackChunkktjs_docusaurus_site||[]).push([[6694],{6694(s,e,u){u.d(e,{createEventModelingServices:()=>a.g});var a=u(7183);u(1471)}}]);

@@ -1,0 +1,6 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:ktjs-xterm
+io.github.shijianjs.ktjs.xterm
+io.github.shijianjs.ktjs.xterm.addon

@@ -1,0 +1,969 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>io.github.shijianjs.ktjs.xterm</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    ktjs-xterm
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector js-like" data-active="" aria-pressed="true" data-filter=":ktjs-xterm/jsMain">js</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option js-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":ktjs-xterm/jsMain" data-filter=":ktjs-xterm/jsMain">
+                                <span class="checkbox--icon"></span>
+                                js
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    ktjs-xterm
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="ktjs-xterm::io.github.shijianjs.ktjs.xterm////PointingToDeclaration//-616499722">
+  <div class="breadcrumbs"><a href="../index.html">ktjs-xterm</a><span class="delimiter">/</span><span class="current">io.github.shijianjs.ktjs.xterm</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-27594649%2FClasslikes%2F-616499722" anchor-label="IBuffer" id="-27594649%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-buffer/index.html"><span><span>IBuffer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-27594649%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-buffer/index.html">IBuffer</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1950761435%2FClasslikes%2F-616499722" anchor-label="IBufferCell" id="-1950761435%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-buffer-cell/index.html"><span>IBuffer</span><wbr><span><span>Cell</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1950761435%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-buffer-cell/index.html">IBufferCell</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1439621372%2FClasslikes%2F-616499722" anchor-label="IBufferCellPosition" id="1439621372%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-buffer-cell-position/index.html"><span>IBuffer</span><wbr><span>Cell</span><wbr><span><span>Position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1439621372%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-buffer-cell-position/index.html">IBufferCellPosition</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-464373522%2FClasslikes%2F-616499722" anchor-label="IBufferElementProvider" id="-464373522%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-buffer-element-provider/index.html"><span>IBuffer</span><wbr><span>Element</span><wbr><span><span>Provider</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-464373522%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-buffer-element-provider/index.html">IBufferElementProvider</a></div><div class="brief "><p class="paragraph">An element supplier for <code class="lang-kotlin">registerBufferElementProvider</code>-style integrations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="679329747%2FClasslikes%2F-616499722" anchor-label="IBufferLine" id="679329747%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-buffer-line/index.html"><span>IBuffer</span><wbr><span><span>Line</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="679329747%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-buffer-line/index.html">IBufferLine</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="681782240%2FClasslikes%2F-616499722" anchor-label="IBufferNamespace" id="681782240%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-buffer-namespace/index.html"><span>IBuffer</span><wbr><span><span>Namespace</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="681782240%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-buffer-namespace/index.html">IBufferNamespace</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-189731010%2FClasslikes%2F-616499722" anchor-label="IBufferRange" id="-189731010%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-buffer-range/index.html"><span>IBuffer</span><wbr><span><span>Range</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-189731010%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-buffer-range/index.html">IBufferRange</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="925466359%2FClasslikes%2F-616499722" anchor-label="IDecoration" id="925466359%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-decoration/index.html"><span><span>IDecoration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="925466359%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-decoration/index.html">IDecoration</a> : <a href="-i-disposable-with-event/index.html">IDisposableWithEvent</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1808559597%2FClasslikes%2F-616499722" anchor-label="IDecorationOptions" id="1808559597%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-decoration-options/index.html"><span>IDecoration</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1808559597%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-decoration-options/index.html">IDecorationOptions</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1899320854%2FClasslikes%2F-616499722" anchor-label="IDecorationOverviewRulerOptions" id="1899320854%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-decoration-overview-ruler-options/index.html"><span>IDecoration</span><wbr><span>Overview</span><wbr><span>Ruler</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1899320854%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-decoration-overview-ruler-options/index.html">IDecorationOverviewRulerOptions</a></div><div class="brief "><p class="paragraph">The ruler tick an overview-ruler decoration draws.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-972586973%2FClasslikes%2F-616499722" anchor-label="IDecorationRenderOptions" id="-972586973%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-decoration-render-options/index.html"><span>IDecoration</span><wbr><span>Render</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-972586973%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-decoration-render-options/index.html">IDecorationRenderOptions</a></div><div class="brief "><p class="paragraph">The current value of <a href="-i-decoration/options.html">IDecoration.options</a>, narrowed to what upstream exposes there.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="723075706%2FClasslikes%2F-616499722" anchor-label="IDimensions" id="723075706%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-dimensions/index.html"><span><span>IDimensions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="723075706%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-dimensions/index.html">IDimensions</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-75366329%2FClasslikes%2F-616499722" anchor-label="IDisposable" id="-75366329%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-disposable/index.html"><span><span>IDisposable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-75366329%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-disposable/index.html">IDisposable</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1350307335%2FClasslikes%2F-616499722" anchor-label="IDisposableWithEvent" id="1350307335%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-disposable-with-event/index.html"><span>IDisposable</span><wbr><span>With</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1350307335%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-disposable-with-event/index.html">IDisposableWithEvent</a> : <a href="-i-disposable/index.html">IDisposable</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1956957146%2FClasslikes%2F-616499722" anchor-label="IFunctionIdentifier" id="-1956957146%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-function-identifier/index.html"><span>IFunction</span><wbr><span><span>Identifier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1956957146%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-function-identifier/index.html">IFunctionIdentifier</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="3358732%2FClasslikes%2F-616499722" anchor-label="IKeyEvent" id="3358732%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-key-event/index.html"><span>IKey</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="3358732%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-key-event/index.html">IKeyEvent</a></div><div class="brief "><p class="paragraph">What the terminal's <code class="lang-kotlin">onKey</code> listener receives.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1771978899%2FClasslikes%2F-616499722" anchor-label="ILink" id="-1771978899%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-link/index.html"><span><span>ILink</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1771978899%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-link/index.html">ILink</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="829855538%2FClasslikes%2F-616499722" anchor-label="ILinkDecorations" id="829855538%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-link-decorations/index.html"><span>ILink</span><wbr><span><span>Decorations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="829855538%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-link-decorations/index.html">ILinkDecorations</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1931483765%2FClasslikes%2F-616499722" anchor-label="ILinkHandler" id="-1931483765%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-link-handler/index.html"><span>ILink</span><wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1931483765%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-link-handler/index.html">ILinkHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-846324100%2FClasslikes%2F-616499722" anchor-label="ILinkProvider" id="-846324100%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-link-provider/index.html"><span>ILink</span><wbr><span><span>Provider</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-846324100%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-link-provider/index.html">ILinkProvider</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-268189509%2FClasslikes%2F-616499722" anchor-label="ILocalizableStrings" id="-268189509%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-localizable-strings/index.html"><span>ILocalizable</span><wbr><span><span>Strings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-268189509%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-localizable-strings/index.html">ILocalizableStrings</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-444094185%2FClasslikes%2F-616499722" anchor-label="ILogger" id="-444094185%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-logger/index.html"><span><span>ILogger</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-444094185%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-logger/index.html">ILogger</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2058485165%2FClasslikes%2F-616499722" anchor-label="IMarker" id="2058485165%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-marker/index.html"><span><span>IMarker</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2058485165%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-marker/index.html">IMarker</a> : <a href="-i-disposable-with-event/index.html">IDisposableWithEvent</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1769718731%2FClasslikes%2F-616499722" anchor-label="IModes" id="1769718731%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-modes/index.html"><span><span>IModes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1769718731%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-modes/index.html">IModes</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1113527156%2FClasslikes%2F-616499722" anchor-label="IOffset" id="1113527156%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-offset/index.html"><span><span>IOffset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1113527156%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-offset/index.html">IOffset</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1828324250%2FClasslikes%2F-616499722" anchor-label="IOverviewRulerOptions" id="-1828324250%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-overview-ruler-options/index.html"><span>IOverview</span><wbr><span>Ruler</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1828324250%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-overview-ruler-options/index.html">IOverviewRulerOptions</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1072992616%2FClasslikes%2F-616499722" anchor-label="IParser" id="1072992616%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-parser/index.html"><span><span>IParser</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1072992616%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-parser/index.html">IParser</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-627539836%2FClasslikes%2F-616499722" anchor-label="IRenderDimensions" id="-627539836%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-render-dimensions/index.html"><span>IRender</span><wbr><span><span>Dimensions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-627539836%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-render-dimensions/index.html">IRenderDimensions</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1465337934%2FClasslikes%2F-616499722" anchor-label="IRenderDimensionsChar" id="1465337934%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-render-dimensions-char/index.html"><span>IRender</span><wbr><span>Dimensions</span><wbr><span><span>Char</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1465337934%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-render-dimensions-char/index.html">IRenderDimensionsChar</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1350136443%2FClasslikes%2F-616499722" anchor-label="IRenderDimensionsCss" id="1350136443%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-render-dimensions-css/index.html"><span>IRender</span><wbr><span>Dimensions</span><wbr><span><span>Css</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1350136443%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-render-dimensions-css/index.html">IRenderDimensionsCss</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1810776946%2FClasslikes%2F-616499722" anchor-label="IRenderDimensionsDevice" id="-1810776946%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-render-dimensions-device/index.html"><span>IRender</span><wbr><span>Dimensions</span><wbr><span><span>Device</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1810776946%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-render-dimensions-device/index.html">IRenderDimensionsDevice</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1201200620%2FClasslikes%2F-616499722" anchor-label="IRenderRange" id="-1201200620%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-render-range/index.html"><span>IRender</span><wbr><span><span>Range</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1201200620%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-render-range/index.html">IRenderRange</a></div><div class="brief "><p class="paragraph">What <code class="lang-kotlin">onRender</code> receives.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="197316085%2FClasslikes%2F-616499722" anchor-label="IResizeEvent" id="197316085%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-resize-event/index.html"><span>IResize</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="197316085%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-resize-event/index.html">IResizeEvent</a></div><div class="brief "><p class="paragraph">What <code class="lang-kotlin">onResize</code> receives.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-341796209%2FClasslikes%2F-616499722" anchor-label="IScrollbarOptions" id="-341796209%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-scrollbar-options/index.html"><span>IScrollbar</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-341796209%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-scrollbar-options/index.html">IScrollbarOptions</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="906371671%2FClasslikes%2F-616499722" anchor-label="ITerminalAddon" id="906371671%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-terminal-addon/index.html"><span>ITerminal</span><wbr><span><span>Addon</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="906371671%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-terminal-addon/index.html">ITerminalAddon</a> : <a href="-i-disposable/index.html">IDisposable</a></div><div class="brief "><p class="paragraph">An addon, as <a href="-terminal/load-addon.html">Terminal.loadAddon</a> takes it.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1699364665%2FClasslikes%2F-616499722" anchor-label="ITerminalConstructorOptions" id="-1699364665%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-terminal-constructor-options/index.html"><span>ITerminal</span><wbr><span>Constructor</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1699364665%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-terminal-constructor-options/index.html">ITerminalConstructorOptions</a> : <a href="-i-terminal-options/index.html">ITerminalOptions</a>, <a href="-i-terminal-init-only-options/index.html">ITerminalInitOnlyOptions</a></div><div class="brief "><p class="paragraph">The single object the constructor takes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-214580939%2FClasslikes%2F-616499722" anchor-label="ITerminalInitOnlyOptions" id="-214580939%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-terminal-init-only-options/index.html"><span>ITerminal</span><wbr><span>Init</span><wbr><span>Only</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-214580939%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-terminal-init-only-options/index.html">ITerminalInitOnlyOptions</a></div><div class="brief "><p class="paragraph">Options that only the constructor honours.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2063433159%2FClasslikes%2F-616499722" anchor-label="ITerminalOptions" id="-2063433159%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-terminal-options/index.html"><span>ITerminal</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2063433159%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-terminal-options/index.html">ITerminalOptions</a></div><div class="brief "><p class="paragraph">Every option the terminal reads.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-721704522%2FClasslikes%2F-616499722" anchor-label="ITerminalQuirks" id="-721704522%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-terminal-quirks/index.html"><span>ITerminal</span><wbr><span><span>Quirks</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-721704522%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-terminal-quirks/index.html">ITerminalQuirks</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-293849262%2FClasslikes%2F-616499722" anchor-label="ITheme" id="-293849262%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-theme/index.html"><span><span>ITheme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-293849262%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-theme/index.html">ITheme</a></div><div class="brief "><p class="paragraph">The colours of the viewport, the cursor, the selection and the 16 ANSI colours.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-746478631%2FClasslikes%2F-616499722" anchor-label="IUnicodeHandling" id="-746478631%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-unicode-handling/index.html"><span>IUnicode</span><wbr><span><span>Handling</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-746478631%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-unicode-handling/index.html">IUnicodeHandling</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1717286949%2FClasslikes%2F-616499722" anchor-label="IUnicodeVersionProvider" id="-1717286949%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-unicode-version-provider/index.html"><span>IUnicode</span><wbr><span>Version</span><wbr><span><span>Provider</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1717286949%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-unicode-version-provider/index.html">IUnicodeVersionProvider</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1564635812%2FClasslikes%2F-616499722" anchor-label="IViewportRange" id="1564635812%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-viewport-range/index.html"><span>IViewport</span><wbr><span><span>Range</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1564635812%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-viewport-range/index.html">IViewportRange</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-883513733%2FClasslikes%2F-616499722" anchor-label="IViewportRangePosition" id="-883513733%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-viewport-range-position/index.html"><span>IViewport</span><wbr><span>Range</span><wbr><span><span>Position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-883513733%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-viewport-range-position/index.html">IViewportRangePosition</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1113370357%2FClasslikes%2F-616499722" anchor-label="IVtExtensions" id="1113370357%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-vt-extensions/index.html"><span>IVt</span><wbr><span><span>Extensions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1113370357%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-vt-extensions/index.html">IVtExtensions</a></div><div class="brief "><p class="paragraph">VT extensions that are off by default.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-277674451%2FClasslikes%2F-616499722" anchor-label="IWindowOptions" id="-277674451%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-window-options/index.html"><span>IWindow</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-277674451%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-window-options/index.html">IWindowOptions</a></div><div class="brief "><p class="paragraph">DECSET 1xx window-title and window-manipulation sequences, each off unless enabled.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1321217931%2FClasslikes%2F-616499722" anchor-label="IWindowsPty" id="-1321217931%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-windows-pty/index.html"><span>IWindows</span><wbr><span><span>Pty</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1321217931%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-windows-pty/index.html">IWindowsPty</a></div><div class="brief "><p class="paragraph">Tells the terminal which Windows PTY it is talking to.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1392570634%2FClasslikes%2F-616499722" anchor-label="Terminal" id="-1392570634%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-terminal/index.html"><span><span>Terminal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1392570634%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">class </span><a href="-terminal/index.html">Terminal</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">options<span class="token operator">: </span><a href="-i-terminal-constructor-options/index.html">ITerminalConstructorOptions</a><span class="token operator">?</span><span class="token operator"> = </span>definedExternally</span></span><span class="token punctuation">)</span> : <a href="-i-disposable/index.html">IDisposable</a></div><div class="brief "><p class="paragraph">The terminal, as the <code class="lang-kotlin">@xterm/xterm</code> module exports it.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2108183726%2FClasslikes%2F-616499722" anchor-label="TerminalEvent" id="-2108183726%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-terminal-event/index.html"><span>Terminal</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2108183726%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-terminal-event/index.html">TerminalEvent</a><span class="token operator">&lt;</span><a href="-terminal-event/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><span class="token punctuation">(</span><span class="token punctuation">(</span><a href="-terminal-event/index.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="-i-disposable/index.html">IDisposable</a></div><div class="brief "><p class="paragraph"><code class="lang-kotlin">IEvent&lt;T&gt;</code>: same shape as <a href="-void-event/index.html">VoidEvent</a>, with one listener argument.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="919549930%2FClasslikes%2F-616499722" anchor-label="VoidEvent" id="919549930%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-void-event/index.html"><span>Void</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="919549930%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-void-event/index.html">VoidEvent</a><span class="token operator"> = </span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="-i-disposable/index.html">IDisposable</a></div><div class="brief "><p class="paragraph"><code class="lang-kotlin">IEvent&lt;void&gt;</code>: a callable object that takes a listener and returns a subscription.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="984501676%2FClasslikes%2F-616499722" anchor-label="Xterm" id="984501676%2FClasslikes%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-xterm/index.html"><span><span>Xterm</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="984501676%2FClasslikes%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="-xterm/index.html">Xterm</a></div><div class="brief "><p class="paragraph">The wrapper's front door.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-652643911%2FFunctions%2F-616499722" anchor-label="createTerminal" id="-652643911%2FFunctions%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-terminal.html"><span>create</span><wbr><span><span>Terminal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-652643911%2FFunctions%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="create-terminal.html"><span class="token function">createTerminal</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">options<span class="token operator">: </span><a href="-i-terminal-constructor-options/index.html">ITerminalConstructorOptions</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-terminal/index.html">Terminal</a></div><div class="brief "><p class="paragraph">Builds a terminal; the same as <a href="-xterm/create.html">Xterm.create</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1802610816%2FFunctions%2F-616499722" anchor-label="listen" id="1802610816%2FFunctions%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="listen.html"><span><span>listen</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1802610816%2FFunctions%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-void-event/index.html">VoidEvent</a><span class="token punctuation">.</span><a href="listen.html"><span class="token function">listen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-i-disposable/index.html">IDisposable</a></div><div class="brief "><p class="paragraph">Subscribes to a payloadless event.</p></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="listen.html">T</a><span class="token operator">&gt; </span><a href="-terminal-event/index.html">TerminalEvent</a><span class="token operator">&lt;</span><a href="listen.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="listen.html"><span class="token function">listen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><span class="token punctuation">(</span><a href="listen.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-i-disposable/index.html">IDisposable</a></div><div class="brief "><p class="paragraph">Subscribes to an event that carries a payload.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1343431023%2FFunctions%2F-616499722" anchor-label="options" id="-1343431023%2FFunctions%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="options.html"><span><span>options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1343431023%2FFunctions%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="options.html"><span class="token function">options</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">build<span class="token operator">: </span><a href="-i-terminal-constructor-options/index.html">ITerminalConstructorOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-i-terminal-constructor-options/index.html">ITerminalConstructorOptions</a></div><div class="brief "><p class="paragraph">Builds the options object the constructor takes, field by field.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1827110611%2FFunctions%2F-616499722" anchor-label="terminalOptions" id="-1827110611%2FFunctions%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="terminal-options.html"><span>terminal</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1827110611%2FFunctions%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="terminal-options.html"><span class="token function">terminalOptions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">build<span class="token operator">: </span><a href="-i-terminal-constructor-options/index.html">ITerminalConstructorOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-i-terminal-constructor-options/index.html">ITerminalConstructorOptions</a></div><div class="brief "><p class="paragraph">Builds a constructor options object field by field.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="848443353%2FFunctions%2F-616499722" anchor-label="terminalTheme" id="848443353%2FFunctions%2F-616499722" data-filterable-set=":ktjs-xterm/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-xterm/jsMain" data-filterable-set=":ktjs-xterm/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="terminal-theme.html"><span>terminal</span><wbr><span><span>Theme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="848443353%2FFunctions%2F-616499722"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-xterm/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="terminal-theme.html"><span class="token function">terminalTheme</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">build<span class="token operator">: </span><a href="-i-theme/index.html">ITheme</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-i-theme/index.html">ITheme</a></div><div class="brief "><p class="paragraph">Builds a theme object field by field.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

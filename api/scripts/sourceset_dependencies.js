@@ -1,0 +1,1 @@
+sourceset_dependencies = '{":ktjs-xterm/commonMain":[],":ktjs-xterm/jsMain":[":ktjs-xterm/webMain"],":ktjs-xterm/webMain":[":ktjs-xterm/commonMain"]}'
