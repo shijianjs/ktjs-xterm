@@ -4,6 +4,7 @@ package io.github.shijianjs.ktjs.xterm.addon
 
 import io.github.shijianjs.ktjs.xterm.ITerminalAddon
 import io.github.shijianjs.ktjs.xterm.IViewportRange
+import kotlin.js.RegExp
 import kotlin.js.definedExternally
 import web.mouse.MouseEvent
 
@@ -28,5 +29,5 @@ external class WebLinksAddon : ITerminalAddon {
 external interface IWebLinksProviderOptions {
     var hover: ((MouseEvent, String, IViewportRange) -> Unit)?
     var leave: ((MouseEvent, String) -> Unit)?
-    var urlRegex: JsRegExp?
+    var urlRegex: RegExp?
 }

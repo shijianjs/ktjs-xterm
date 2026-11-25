@@ -17,7 +17,7 @@
 
 ## 项目交付
 
-- [x] 模块 `ktjs-xterm`：`XtermModule.kt` / `XtermTypes.kt` / `Xterm.kt` / 5 个 addon 模块 / `JsRegExp.kt`
+- [x] 模块 `ktjs-xterm`：`XtermModule.kt` / `XtermTypes.kt` / `Xterm.kt` / 5 个 addon 模块
 - [x] jsTest：7 个用例，`:ktjs-xterm:jsBrowserTest` 通过
 - [x] demo：overview / playground / api / conventions，中英双语，接 `ktjs-dom-kit` 与 `ktjs-vaadin`
 - [x] docs：intro / getting-started / usage / licensing，中英双语，kit 首页五件套、右侧 TOC 可折叠
@@ -30,7 +30,7 @@
 ### 注意事项
 
 - 声明只放 `jsMain`：`external interface` + sealed 字面量，不写 `dynamic`。
-- `@file:JsModule` 的文件里只能有 npm 包的导出；全局 `RegExp` 放旁边的 `addon/JsRegExp.kt`。
+- `@file:JsModule` 的文件里只能有 npm 包的导出；全局 `RegExp` 用 stdlib 的 `kotlin.js.RegExp`，别自己声明。
 - 事件是函数类型：`terminal.onData.listen { … }`，返回 `IDisposable`。
 - 加 npm 依赖要同时改根 `package.json` 与模块 `build.gradle.kts` 的 `npm(...)`，然后跑 `kotlinUpgradePackageLock`。
 - 版本口径：`<npm 版本>-kt.<修订号>`，工作树写 `-SNAPSHOT`。

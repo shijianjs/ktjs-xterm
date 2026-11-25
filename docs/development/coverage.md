@@ -76,7 +76,7 @@
 | 45 | `addon-web-links`：`WebLinksAddon` | `addon.WebLinksAddon` | 编译期 |
 | 46 | addon 选项类型（`ISearchOptions`、`ISearchAddonOptions`、`ISerializeOptions`、`IWebLinksAddonOptions`…） | 同名接口 | 编译期 |
 | 47 | `@xterm/xterm` 的模块形状（`declare module '@xterm/xterm'`） | `@file:JsModule` + `Terminal` 导出 | 全部用例 |
-| 48 | 全局 `RegExp` 参数（`ILinkMatcher` 用） | `JsRegExp` + `jsRegExp()`（`addon/JsRegExp.kt`） | 编译期 |
+| 48 | 全局 `RegExp` 参数（`ILinkMatcher` 用） | stdlib 的 `kotlin.js.RegExp` | 编译期 |
 | 49 | `Terminal` 的 `js` 类型别名 `ITerminalAddon` | 收成 `ITerminalAddon` | 编译期 |
 | 50 | demo 侧：`open` + `write` + `FitAddon.fit` 组合 | `PlaygroundPage` | `DemoPageTest` + 手测 |
 | 51 | `onData` 回显链路 | `listen` + `write` | `DemoPageTest` |
@@ -110,9 +110,10 @@
   再加 `listen` 扩展。这样 `terminal.onData.listen { … }` 就是一次普通调用，也不用给每个事件造一个 wrapper 类。
 - **构造器交叉类型收成一个接口**：`ITerminalOptions & ITerminalInitOnlyOptions` 在 Kotlin 的 external 世界里没有对应语法，
   声明 `ITerminalConstructorOptions : ITerminalOptions, ITerminalInitOnlyOptions`，构造器只收这一个类型。
-- **`@file:JsModule` 文件的边界**：`XtermModule.kt` 里只能放 npm 包的导出（`Terminal` 与它的 companion）。
-  全局 `RegExp` 这类东西放不进同一个文件——编译会报 `Only external declarations are allowed`——
-  所以 `JsRegExp` / `jsRegExp()` 单独放在 `addon/JsRegExp.kt`。
+- **`@file:JsModule` 文件的边界**：`XtermModule.kt` 里只能放 npm 包的导出（`Terminal` 与它的 companion），
+  自己新声明的 external 也塞不进同一个文件（编译报 `Only external declarations are allowed`）。
+  但 `RegExp` 不用自己声明：stdlib 的 `kotlin.js.RegExp` 就是全局构造器，
+  `addon/WebLinksAddonModule.kt` 里 `import kotlin.js.RegExp` 直接当参数类型用。
 - **解析器回调用 `JsAny`**：上游允许 handler 返回 `Boolean` 或 `Promise<Boolean>`，Kotlin 无法用一个签名表达两者，
   在 `IParser` 处收成 `JsAny`，由调用方自己按需 cast。
 - **不写「write 之后读 buffer」的测试**：xterm 的 `write` 是异步的（解析在下一帧），kotlin.test 没有 await，
