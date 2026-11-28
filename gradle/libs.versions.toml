@@ -29,7 +29,7 @@ hutool = "5.8.48"
 # ktjs siblings from this account, consumed as SNAPSHOTs from `mavenLocal` while the
 # kit and its consumers are changed together. `ktjs-docusaurus` is the docs wrapper,
 # `ktjs-docusaurus-kit` the toolbox whose home sections the landing page uses.
-ktjs-docusaurus = "3.10.2-kt.2-SNAPSHOT"
+ktjs-docusaurus = "3.10.2-kt.2"
 ktjs-docusaurus-kit = "0.1.0-SNAPSHOT"
 ktjs-demo-kit = "0.1.0-SNAPSHOT"
 ktjs-vaadin-web-components = "25.3.6-kt.8-SNAPSHOT"
