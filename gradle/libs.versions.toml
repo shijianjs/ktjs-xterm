@@ -37,7 +37,7 @@ ktjs-iconify-icon = "3.0.5-kt.6-SNAPSHOT"
 ktjs-dom-kit = "0.1.0-SNAPSHOT"
 
 # ktjs-docusaurus's Gradle plugin: its own `-kt.N` revision.
-ktjs-docusaurus-gradle-plugin = "3.10.2-kt.1-SNAPSHOT"
+ktjs-docusaurus-gradle-plugin = "3.10.2-kt.1"
 
 # npm versions Gradle has to know about (the npm list itself is `package.json`):
 # `@docusaurus/theme-mermaid` stays on the wrapper's `@docusaurus/*` line, and the npm
